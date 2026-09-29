@@ -200,6 +200,20 @@ section h2 {
     padding: 6px 9px;
     border-radius: 4px;
 }
+.project-link {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 10px 15px;
+    background: #111827;
+    color: white;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    background: #2563eb;
+}
 
 .experience-item {
     max-width: 850px;
