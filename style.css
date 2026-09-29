@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f9fb;
+    color: #1d2433;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links a {
+    color: #444;
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.hero {
+    min-height: 620px;
+    padding: 130px 10%;
+    background: #111827;
+    color: white;
+}
+
+.intro,
+.section-label {
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin-bottom: 5px;
+}
+
+.hero h2 {
+    font-size: 27px;
+    font-weight: normal;
+    color: #b9c2d0;
+    margin-bottom: 30px;
+}
+
+.statement {
+    max-width: 750px;
+    font-size: 19px;
+    color: #d1d5db;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-button {
+    padding: 13px 25px;
+    background: #2563eb;
+    color: white;
+    border-radius: 5px;
+}
+
+.secondary-button {
+    padding: 13px 25px;
+    border: 1px solid #6b7280;
+    color: white;
+    border-radius: 5px;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+}
+
+.secondary-button:hover {
+    border-color: white;
+}
+
+section {
+    padding: 90px 10%;
+}
+
+.alternate {
+    background: white;
+}
+
+section h2 {
+    font-size: 38px;
+    margin-bottom: 35px;
+}
+
+.about-text {
+    max-width: 850px;
+    font-size: 18px;
+    color: #4b5563;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.skill-category h3 {
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-list span {
+    padding: 8px 13px;
+    background: #eef2ff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: 0.25s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.project-number {
+    font-size: 12px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+.project-skills {
+    margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.project-skills span {
+    font-size: 12px;
+    background: #f3f4f6;
+    padding: 6px 9px;
+    border-radius: 4px;
+}
+
+.experience-item {
+    max-width: 850px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.experience-item p {
+    color: #6b7280;
+}
+
+#contact {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+#contact p {
+    color: #6b7280;
+}
+
+.contact-links {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-links a {
+    background: #111827;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 30px 10%;
+    background: #111827;
+    color: #9ca3af;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
